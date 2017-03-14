@@ -22,7 +22,7 @@ const SalesforceMediaButtons = React.createClass({
       const usernameParam = `&username=${username}`;
       const completeUrl = urlWithoutUsername + usernameParam;
       return (
-        <a href={completeUrl} className="button dark small" key={`salesforce-media-${username}`}>
+        <a href={completeUrl} target="_blank" className="button dark small" key={`salesforce-media-${username}`}>
           {username}
         </a>
       );
@@ -31,7 +31,7 @@ const SalesforceMediaButtons = React.createClass({
     return (
       <div>
         <p>
-          Create Salesforce media record for:
+          Create a new Salesforce "Media" record for this article, credited to:
         </p>
         {salesforceButtons}
       </div>
